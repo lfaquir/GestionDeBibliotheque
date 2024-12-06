@@ -1,0 +1,90 @@
+h1{
+    height: 5vh;
+    display:list-item;
+    justify-content: flex-start;
+    align-items: center;  
+}
+
+.btn {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+.Bibliotheque {
+    display: flex;
+    justify-content:left;
+    font-size: 40px; /* Taille du texte */
+    font-weight: bold; /* Texte en gras */
+    color: #ffffff; /* Couleur principale du texte */
+    text-shadow: 
+        1px 1px 0px #333333,
+        2px 2px 0px #333333, 
+        3px 3px 0px #333333, 
+        4px 4px 0px #333333, 
+        5px 5px 0px #333333; /* Création de l'effet de profondeur */
+    transform: rotateX(0deg) rotateY(0deg); /* Inclinaison pour l'effet 3D */
+    left: 40%;
+}
+
+hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    
+    text-align: center;
+    height: 5px;
+  }
+  
+  hr::after {
+    background: #fff;
+    content: '§';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+  }
+  
+  button {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espacement entre l'image et le texte */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .icon {
+    width: 20px; /* Ajuste la taille de l'image */
+    height: 20px; /* Ajuste la taille de l'image */
+    object-fit: contain; /* Maintient les proportions de l'image */
+  }
+  
+  .header-background {
+    position: absolute; /* Permet de positionner l'image précisément */
+    top: 0; /* Positionne l'image tout en haut */
+    left: 0; /* Aligne l'image à gauche */
+    width: 100%; /* Prend toute la largeur */
+    height: 130px; /* Hauteur personnalisée */
+    background-size: cover; /* Adapte l'image */
+    background-position: center; /* Centre l'image horizontalement */
+    background-repeat: no-repeat; /* Empêche la répétition */
+    z-index: -1; /* Met l'image derrière le contenu */
+}
+
+.forimage{
+    position: absolute;
+  top: 11%;
+  left: 29%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: auto;
+}

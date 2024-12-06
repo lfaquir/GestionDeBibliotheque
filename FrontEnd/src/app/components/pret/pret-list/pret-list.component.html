@@ -1,0 +1,51 @@
+<div class="container">
+    <h5>Associer un livre à un abonné</h5>
+    <div>
+      <label for="livreId">Livre :</label>
+      <select id="livreId" (change)="mettreAJourLivreId($event)">
+        <option value="0">-- Sélectionnez un livre --</option>
+        <option *ngFor="let livre of livres" [value]="livre.id">
+          {{ livre.titre }}
+        </option>
+      </select>
+    </div>
+  
+    <div>
+      <label for="abonneId">Abonné :</label>
+      <select id="abonneId" (change)="mettreAJourAbonneId($event)">
+        <option value="0">-- Sélectionnez un abonné --</option>
+        <option *ngFor="let abonne of abonnes" [value]="abonne.id">
+          {{ abonne.nom }}
+        </option>
+      </select>
+    </div>
+
+    <button (click)="ajouterPret()">Associer</button>
+    <h5>Liste des prêts</h5>
+    <div>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>ID du prêt</th>
+              <th>ID du livre</th>
+              <th>ID de l'abonné</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let pret of prets">
+              <td>{{ pret.id }}</td>
+              <td>{{ pret.livre_id }}</td>
+              <td>{{ pret.abonne_id }}</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+</div>       
+    
+  
+  
+  
+
+  
+  
+  

@@ -1,0 +1,51 @@
+.container {
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+h5 {
+    font-size: 0.8em;
+    color: #444;
+    margin-bottom: 15px;
+  }
+  
+  /* Conteneur */
+  div {
+    margin-top: 20px;
+  }
+  
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 0.7em;
+    color: #333;
+  }
+  
+  thead {
+    background-color: #000000;
+    color: white;
+  }
+  
+  th,
+  td {
+    padding: 8px 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #e6f7ff;
+  }
+  
+  /* Colonnes du tableau */
+  th {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  

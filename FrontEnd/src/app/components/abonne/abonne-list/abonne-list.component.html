@@ -1,0 +1,29 @@
+<form>
+    <input type="text" placeholder="Nom" (input)="mettreAJourNom($event)" [value]="nom" />
+    <button type="button" class="btn btn-primary" (click)="ajouterAbonne(nom)" >
+      Ajouter
+    </button>
+</form>
+<br />
+<div class="container">
+    <h5>Liste des abonnés</h5>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nom</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let abonne of abonnes">
+          <td>{{ abonne.id }}</td>
+          <td>{{ abonne.nom }}</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+<br />
+
+  
+  
+  

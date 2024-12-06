@@ -1,0 +1,41 @@
+  <div >
+    <h1 class="Bibliotheque">Bibliothéque</h1>
+    <img src="assets/rendu-3d-arriere-plan-ligne-bande-haute-resolution-4k_547280-269.avif" alt="images" class="header-background">
+    <img src="assets/pngtree-education-symbolized-a-stack-of-books-under-the-silhouette-of-a-picture-image_13060235.png" alt="image2" class="forimage">
+  </div>     
+  <hr>
+  <div class="btn">
+    <div>
+      <nav>
+        <button (click)="toggleLivres()">
+          <img src="assets/icone-livres.png" alt="Icône livres" class="icon">Livres
+        </button>
+      </nav>
+      <div *ngIf="showLivres">
+        <app-livre-list></app-livre-list>
+      </div>
+    </div>
+
+    <div>
+      <nav>
+        <button (click)="toggleAbonnes()">
+          <img src="assets/icone-abonnes.png" alt="Icône abonnés" class="icon">Abonnés
+        </button>
+      </nav>
+      <div *ngIf="showAbonnes">
+        <app-abonne-list></app-abonne-list>
+      </div>
+    </div>
+
+    <div>
+      <nav>
+        <button (click)="togglePrets()">Prêts
+          <img src="assets/icone-prets.png" alt="Icône prets" class="icon">
+        </button>
+      </nav>
+      <div *ngIf="showPrets">
+        <app-pret-list></app-pret-list>
+      </div>
+    </div>
+  </div>
+

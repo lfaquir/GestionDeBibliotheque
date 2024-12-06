@@ -1,0 +1,21 @@
+<div class="container">
+    <h5>Liste des livres</h5>
+    <div>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Titre</th>
+            <th>Auteur</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let livre of livres">
+            <td>{{ livre.id }}</td>
+            <td>{{ livre.titre }}</td>
+            <td>{{ livre.auteur }}</td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+</div>

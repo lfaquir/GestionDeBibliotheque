@@ -1,0 +1,85 @@
+/*body*/
+.container {
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+
+/*titre: liste des prets, Associer un livre à un abonné*/
+h5 {
+    font-size: 0.8em;
+    color: #444;
+    margin-bottom: 15px;
+  }
+  
+  /*champs */
+  div {
+    margin-bottom: 15px;
+  }
+  
+  /* Label */
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 0.8em;
+  }
+  
+  /* séléctionnez */
+  select {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 0.7em;
+    color: #333;
+  }
+  
+  /* Bouton Associer */
+  button {
+    justify-content: left;
+    padding: 8px 15px;
+    font-weight:bold;
+    border: none;
+    background-color: #ffe100;
+    color: #000000;
+    border-radius: 4px;
+    font-size: 0.7em;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #fae758;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 0.7em;
+    color: #333;
+  }
+  
+  thead {
+    background-color: #000000;
+    color: white;
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #dcf3fe;
+    font-size: 0.8em;
+  }
+  
